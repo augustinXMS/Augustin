@@ -1,0 +1,174 @@
+.header {
+    min-height: 900px;
+    background: rgba(2 146 218);
+    width: 100%;
+}
+@media only screen and (min-width: 600px) {
+    .menuBar{
+        overflow: hidden;
+        background-color: rgba(39	16	143	);
+        position: fixed; /* Set the navbar to fixed position */
+        top: 0; /* Position the navbar at the top of the page */
+        width: 100%; /* Full width */
+        z-index: 2;
+    }
+}
+
+.menuBar>p{
+    margin-top: 1.3rem;
+}
+.menuHeading {
+    overflow-wrap: break-word;
+    font-weight: bold;
+    font-size: 1.4rem;
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+    cursor: pointer;
+    margin: auto;
+    color: white;
+}
+
+
+.nameHeading {
+    color: white;
+    font-weight: bold;
+    font-size: 2.4rem;
+    font-family: arial, helvetica;
+    width: 598px;
+    margin: 0px auto;
+}
+
+.nameHeading>h3 {
+    font-size: 1.4rem;
+}
+
+.introImageButtons{
+    padding:9rem;
+}
+
+.profilePic {
+    border-radius: 20%;
+    width: 17rem;
+    height: 15rem;
+    color: #FFFFFF;
+}
+/* for smaller screen */
+@media only screen and (max-width: 600px) {
+    .profilePic {
+        width: 17rem;
+        height: 12rem;
+    }
+}
+
+.hireButton{
+    
+    padding:0.8rem;
+}
+.badgeImage{
+    width:14rem;
+    height:8rem;
+    margin:0.5rem;
+}
+.text-box {
+    padding: 0.6rem;
+    font-size: 1rem;
+    font-family: arial, helvetica;
+    text-align : center;
+}
+
+.bodyTitle {
+    font-weight: bold;
+    font-size: 1.8rem;
+    font-family: arial, helvetica;
+
+}
+
+.chart {
+    padding-bottom: 0.6em;
+}
+
+.container_1 {
+    margin: 40px;
+    background-color: white;
+    box-shadow: 0 0 0.4em 0.4em rgba(0, 0, 0, 0.15);
+
+}
+
+.container_2 {
+    margin: 40px;
+    background-color: white;
+    box-shadow: 0 0 0.4em 0.4em rgba(0, 0, 0, 0.15);
+    
+
+}
+
+.container_3 {
+    margin: 40px;
+    background-color: white;
+    box-shadow: 0 0 0.4em 0.4em rgba(0, 0, 0, 0.15);
+    padding-bottom: 0.6em;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .container_3 {
+        height: 1000px;
+    }
+}
+
+.container_4 {
+    margin: 40px;
+    background-color: blue;
+    box-shadow: 0 0 0.4em 0.4em rgba(0, 0, 0, 0.15);
+    height: 300px;
+}
+
+.footer {
+    min-height: 40rem;
+    width: 100%;
+   
+
+}
+.contactSection{  
+    margin-top: 50px;
+    width:100%;
+    background-color: white;
+    box-shadow: 0 0 0.4em 0.4em rgba(0, 0, 0, 0.15);
+    padding:2rem;
+    font-size: 1.2rem;
+    text-align : center;
+    font-family: arial, helvetica;
+  
+}
+.siteInfo {
+    height: 140px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(39	16	143	);
+}
+
+.footerBox {
+    padding: 1.2rem;
+    text-align : center;
+}
+
+.footerText {
+    font-weight: bold;
+    font-size: 1.4rem;
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+    margin: auto;
+    color: white;
+}
+
+.footerTextSubtitle {
+    color: white;
+    font-size: 1.2rem;
+    font-family: arial, helvetica;
+    margin: auto;
+}
+.gitHubLogo{
+    width:2rem;
+    height:2rem;
+    margin:0.2rem;
+}

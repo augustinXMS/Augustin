@@ -1,0 +1,16 @@
+.m-auto{
+    margin:max-content;
+}
+.profile_pic{
+    border-radius: 50%;
+    width: 20rem;
+    height: 15rem;
+}
+
+
+.header{
+    margin:max-content;
+    min-height:400px;
+    background: #48b1bf;
+   
+}

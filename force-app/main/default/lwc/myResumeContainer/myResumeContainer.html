@@ -1,0 +1,147 @@
+<template>
+    <div class="header">
+        <br>
+        <div class="slds-grid  slds-grid_vertical">
+            <!-- Menu -->
+            <div class="slds-col slds-size_1-of-1 menuBar">
+                <div class="slds-grid slds-wrap menuHeading slds-grid_align-center">
+                    <div class="slds-col slds-size_6-of-12">
+                        <div class="nameHeading mobile_text_center ">
+                            {USER_DETAILS.NAME}
+                            <h3>Salesforce Developer ☁️</h3>
+                        </div>
+                    </div>
+                    <div class="slds-col slds-size_1-of-12 slds-medium-size_2-of-12  "></div>
+                    <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-12 slds-align-middle ">
+                        <div data-id="1" onclick={handleMenuClick}>
+                            About
+                        </div>
+                    </div>
+                    <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-12 slds-align-middle ">
+                        <div data-id="2" onclick={handleMenuClick}>
+                            Skills
+                        </div>
+                    </div>
+                    <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-12 slds-align-middle">
+                        <div data-id="3" onclick={handleMenuClick}>
+                            Projects
+                        </div>
+                    </div>
+                    <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-12 slds-align-middle ">
+                        <div data-id="5" onclick={handleMenuClick}>
+                            Contact
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ProfilePic + Buttons -->
+            <div class="slds-col slds-size_1-of-1 slds-align_absolute-center introImageButtons">
+                <div class="slds-grid slds-grid_vertical">
+                    <div class="slds-col">
+                        <img src={PROFILE_IMAGE} alt="profile-pic" class="profilePic" />
+                    </div>
+                    <div class="slds-col slds-align_absolute-center">
+                        <div class="slds-grid">
+                            <div class="slds-col hireButton">
+                                <lightning-button data-id="5" variant="Success" label="Contact"
+                                    onclick={handleMenuClick}></lightning-button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Badges -->
+            <div class="slds-col slds-size_1-of-1 slds-align_absolute-center badges">
+                <div class="slds-grid slds-wrap slds-align_absolute-center">
+                    <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-12 slds-align_absolute-center"></div>
+                    <div class="slds-col slds-size_1-of-1  slds-medium-size_2-of-12 slds-align_absolute-center">
+                        <img src={badgeAdmin} alt="profile-pic" class="badgeImage" />
+                    </div>
+                    <div class="slds-col slds-size_1-of-1  slds-medium-size_2-of-12 slds-align_absolute-center">
+                        <img src={badgePd1} alt="profile-pic" class="badgeImage" />
+                    </div>
+
+                    <div class="slds-col slds-size_1-of-1  slds-medium-size_2-of-12 slds-align_absolute-center">
+                        <img src={badgeAppBuilder} alt="profile-pic" class="badgeImage" />
+                    </div>
+
+                    <div class="slds-col slds-size_1-of-1  slds-medium-size_2-of-12 slds-align_absolute-center">
+                        <img src={badgeJavascript1} alt="profile-pic" class="badgeImage" />
+                    </div>
+                    <div class="slds-col slds-size_1-of-1  slds-medium-size_2-of-12 slds-align_absolute-center">
+                        <img src={badgeSalesCloud} alt="profile-pic" class="badgeImage" />
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body">
+        <div class="slds-grid slds-wrap ">
+            <div class="slds-col slds-size_1-of-1">
+                <div class="container_1">
+                    <div class="slds-grid slds-wrap ">
+                        <div class="slds-col slds-size_1-of-1 text-box ">
+                            <span class="bodyTitle">About</span>
+                            <div class="slds-p-top_small">
+                                <p> Hello, I am Augustin, Salesforce Developer</p>
+                                <p>I specialize in LWC, Salesforce Apex, Web Services and Javascript</p>
+                                <p> My focus is on developing practical CRM solutions with standard Salesforce
+                                    functionalities and 3rd party solution.</p>
+                                <p> I worked in more than 10 projects with clients all over Europe.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container_2 ">
+                    <span class="bodyTitle">Skills</span>
+                    <c-my-skills-component></c-my-skills-component>
+                </div>
+                <div class="container_3">
+                    <span class="bodyTitle">Projects</span>
+                    <c-my-projects-component></c-my-projects-component>
+                </div>
+            </div>
+            <div class="slds-col slds-size_1-of-12"></div>
+        </div>
+
+    </div>
+    <!-- style={backgroundStyle} -->
+    <div class="footer container_5" style={backgroundStyle}>
+        <!-- Contact section -->
+        <div class="slds-grid slds-wrap">
+            <div class="slds-col slds-size_1-of-1 slds-medium-size_3-of-12"></div>
+            <div class="slds-col slds-size_1-of-1 slds-medium-size_6-of-12">
+                <div class="slds-grid slds-grid_vertical  contactSection slds-grid_vertical-align-center">
+                    <div class="slds-col slds-size_1-of-1">
+                        <a href="https://github.com/mihailXMS">
+                            <img src={gitHubLogo} alt="gitHubLogo" class="gitHubLogo" />
+                        </a>
+                        <p class="bodyTitle">Contact Information</p>
+                    </div>
+                    <div class="slds-col slds-size_1-of-1">
+                        <p>Email: mihailcraciun1@gmail.com</p>
+                    </div>
+                    <div class="slds-col slds-size_1-of-1">
+                        <p>Phone: +40727507917</p>
+                    </div>
+                    <div class="slds-col slds-size_1-of-1">
+                        <p>Language: English,Romanian</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-col slds-size_1-of-1 slds-medium-size_3-of-12"></div>
+        </div>
+        <!-- SiteInfo -->
+        <div class="siteInfo ">
+            <div class="slds-grid slds-grid_vertical slds-grid_vertical-align-center footerBox">        
+                <div class="slds-col  slds-size_1-of-1 footerText">
+                    <span> By Augustin Mihail</span>
+                </div>
+                <div class="slds-col slds-size_1-of-1 footerTextSubtitle">
+                    <span> Made with Lightning Web Components </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
